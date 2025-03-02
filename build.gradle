@@ -29,6 +29,9 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.9.2'
+    testImplementation 'io.zonky.test:embedded-postgres:2.0.4'
+    testImplementation 'org.postgresql:postgresql:42.6.0'
 }
 
 tasks.named('test') {
